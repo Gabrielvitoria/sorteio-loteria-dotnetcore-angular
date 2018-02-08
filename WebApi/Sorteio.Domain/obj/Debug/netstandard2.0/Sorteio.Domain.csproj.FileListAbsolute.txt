@@ -1,0 +1,8 @@
+C:\Projetos\Temporarios\Sorteio\WebApi\Sorteio.Domain\bin\Debug\netstandard2.0\Sorteio.Domain.deps.json
+C:\Projetos\Temporarios\Sorteio\WebApi\Sorteio.Domain\bin\Debug\netstandard2.0\Sorteio.Domain.dll
+C:\Projetos\Temporarios\Sorteio\WebApi\Sorteio.Domain\bin\Debug\netstandard2.0\Sorteio.Domain.pdb
+C:\Projetos\Temporarios\Sorteio\WebApi\Sorteio.Domain\obj\Debug\netstandard2.0\Sorteio.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\Temporarios\Sorteio\WebApi\Sorteio.Domain\obj\Debug\netstandard2.0\Sorteio.Domain.AssemblyInfoInputs.cache
+C:\Projetos\Temporarios\Sorteio\WebApi\Sorteio.Domain\obj\Debug\netstandard2.0\Sorteio.Domain.AssemblyInfo.cs
+C:\Projetos\Temporarios\Sorteio\WebApi\Sorteio.Domain\obj\Debug\netstandard2.0\Sorteio.Domain.dll
+C:\Projetos\Temporarios\Sorteio\WebApi\Sorteio.Domain\obj\Debug\netstandard2.0\Sorteio.Domain.pdb
