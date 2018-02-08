@@ -1,8 +1,15 @@
 # sorteio-loteria-dotnetcore-angular
-Projeto de simulação de sorteio de cartões de loteria em .net core e Angular
+Projeto para simular sorteio de cartões de loteria em .NET Core 2.0 e Angular.
+
 
 Requisitos:
 > .Net core 2.0 >
+> Visual Code e add Extensions C#, Nuget Packege Manager ;
+> Prompt Comand de preferência;
+> Pacote NPM instalado;
 
-> VSCODE com os Extensions- C#, Nuget Packege Manager, 
 
+
+#Lib's
+> FluentValidator e Notifiable para validações e mensagens;
+> 
