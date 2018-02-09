@@ -15,15 +15,19 @@ namespace Sorteio.Api
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc(); // Para utilizar o MIDewer Padrão MVC
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline: 
+        /*COmando  dotnet add packeg Migrosofit.AspNetCore  */
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseMvc(); // Para utilizar o MIDewer Padrão MVC com comando: dotnet add packeg Migrosofit.AspNetCore
 
             app.Run(async (context) =>
             {
