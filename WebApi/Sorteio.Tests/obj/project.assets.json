@@ -5668,11 +5668,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\Temporarios\\Sorteio\\WebApi\\Sorteio.Tests\\Sorteio.Tests.csproj",
+      "projectUniqueName": "C:\\Projetos\\Temporarios\\sorteio-loteria-dotnetcore-angular\\WebApi\\Sorteio.Tests\\Sorteio.Tests.csproj",
       "projectName": "Sorteio.Tests",
-      "projectPath": "C:\\Projetos\\Temporarios\\Sorteio\\WebApi\\Sorteio.Tests\\Sorteio.Tests.csproj",
+      "projectPath": "C:\\Projetos\\Temporarios\\sorteio-loteria-dotnetcore-angular\\WebApi\\Sorteio.Tests\\Sorteio.Tests.csproj",
       "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\Temporarios\\Sorteio\\WebApi\\Sorteio.Tests\\obj\\",
+      "outputPath": "C:\\Projetos\\Temporarios\\sorteio-loteria-dotnetcore-angular\\WebApi\\Sorteio.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5691,8 +5691,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Projetos\\Temporarios\\Sorteio\\WebApi\\Sorteio.Domain\\Sorteio.Domain.csproj": {
-              "projectPath": "C:\\Projetos\\Temporarios\\Sorteio\\WebApi\\Sorteio.Domain\\Sorteio.Domain.csproj"
+            "C:\\Projetos\\Temporarios\\sorteio-loteria-dotnetcore-angular\\WebApi\\Sorteio.Domain\\Sorteio.Domain.csproj": {
+              "projectPath": "C:\\Projetos\\Temporarios\\sorteio-loteria-dotnetcore-angular\\WebApi\\Sorteio.Domain\\Sorteio.Domain.csproj"
             }
           }
         }

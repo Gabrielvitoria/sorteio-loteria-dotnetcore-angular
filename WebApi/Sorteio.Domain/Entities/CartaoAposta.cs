@@ -11,7 +11,7 @@ namespace Sorteio.Domain.Entities
         public Guid Id { get; private set; }
         public DateTime DataAposta { get; private set; }
         public string NomeApostador { get; private set; }
-        public Dictionary<Guid, List<int>> NumerosApostados { get; private set; }
+        public List<int> NumerosApostados { get; private set; }
         public List<int> NumerosAcertados { get; private set; }
         public bool CartaoPremiado { get; private set; }
 
@@ -20,15 +20,10 @@ namespace Sorteio.Domain.Entities
         {
             if (surpresinha)
             {
-                var numeros = new Dictionary<Guid, List<int>>();
-                var numerosSuspresinha = new List<int>();
-                numerosSuspresinha = GerarNumerosSurpresinha();
-                numeros.Add(Guid.NewGuid(), numerosSuspresinha);
-
-                this.NumerosApostados = numeros;
-                this.NomeApostador = nomeApostador;
-                this.DataAposta = DateTime.Now;
                 this.Id = Guid.NewGuid();
+                this.DataAposta = DateTime.Now;
+                this.NomeApostador = nomeApostador;
+                this.NumerosApostados = GerarNumerosSurpresinha();
             }
             else{
                 AddNotifications(new ValidationContract()
@@ -38,9 +33,6 @@ namespace Sorteio.Domain.Entities
 
         public CartaoAposta(List<int> numerosApostados, string nomeApostador)
         {
-            var numeros = new Dictionary<Guid, List<int>>();
-            var copiaNumeros = new HashSet<int>();
-
             var duplicados = numerosApostados.GroupBy(x => x)
                         .Where(x => x.Count() > 1)
                         .Select(x => x.Key)
@@ -52,19 +44,18 @@ namespace Sorteio.Domain.Entities
                                       .HasMaxLen(duplicados.Count.ToString(), 0, "Números", "Números repetidos não são permitidos"));
 
             }
-            else if (numerosApostados.Count == 0 || numerosApostados.Count > 60)
+            else if (numerosApostados.Count == 0 || numerosApostados.Count > 6)
             {
                 AddNotifications(new ValidationContract()
-                      .HasMinLen(numerosApostados.Count.ToString(), 0, "Números", "Quantidade de números mínimo não permitido de 1 - 60.")
-                      .HasMaxLen(numerosApostados.Count.ToString(), 0, "Números", "Quantidade de números máxima não permitido de 1-60."));
+                      .HasMinLen(numerosApostados.Count.ToString(), 0, "Números", "Quantidade de números mínimo não permitido de 1 - 6.")
+                      .HasMaxLen(numerosApostados.Count.ToString(), 0, "Números", "Quantidade de números máxima não permitido de 1 - 6."));
             }
             else
             {
-                numeros.Add(Guid.NewGuid(), numerosApostados);
-                this.NomeApostador = nomeApostador;
                 this.Id = Guid.NewGuid();
-                this.NumerosApostados = numeros;
                 this.DataAposta = DateTime.Now;
+                this.NomeApostador = nomeApostador;
+                this.NumerosApostados = numerosApostados;
             }
         }
 
@@ -75,7 +66,7 @@ namespace Sorteio.Domain.Entities
 
             var lista = new List<int>();
             Random randNum = new Random();
-            for (int i = 0; i < 60; i++)
+            for (int i = 0; i < 6; i++)
             {
                 lista.Add(randNum.Next(Min, Max));
             }

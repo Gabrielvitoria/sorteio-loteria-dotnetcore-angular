@@ -33,7 +33,7 @@ namespace Sorteio.Domain.Entities
 
             var lista = new List<int>();
             Random randNum = new Random();
-            for (int i = 0; i < 60 ; i++)
+            for (int i = 0; i < 6 ; i++)
             {
                 lista.Add(randNum.Next(Min, Max) );
             }

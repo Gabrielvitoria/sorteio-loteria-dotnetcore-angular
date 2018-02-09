@@ -8,7 +8,7 @@ namespace Sorteio.Tests
     public class SorteioTest
     {
         [TestMethod]
-        public void Deve_Criar_Um_Sorteio_60_Numeros()
+        public void Deve_Criar_Um_Sorteio_6_Numeros_de_1_60()
         {
             var sorteio = new Sorteio.Domain.Entities.Sorteio();
 

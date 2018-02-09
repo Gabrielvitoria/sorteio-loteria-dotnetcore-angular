@@ -12540,11 +12540,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\Temporarios\\Sorteio\\WebApi\\Sorteio.Api\\Sorteio.Api.csproj",
+      "projectUniqueName": "c:\\Projetos\\Temporarios\\sorteio-loteria-dotnetcore-angular\\WebApi\\Sorteio.Api\\Sorteio.Api.csproj",
       "projectName": "Sorteio.Api",
-      "projectPath": "C:\\Projetos\\Temporarios\\Sorteio\\WebApi\\Sorteio.Api\\Sorteio.Api.csproj",
+      "projectPath": "c:\\Projetos\\Temporarios\\sorteio-loteria-dotnetcore-angular\\WebApi\\Sorteio.Api\\Sorteio.Api.csproj",
       "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\Temporarios\\Sorteio\\WebApi\\Sorteio.Api\\obj\\",
+      "outputPath": "c:\\Projetos\\Temporarios\\sorteio-loteria-dotnetcore-angular\\WebApi\\Sorteio.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
